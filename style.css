@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*
+{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+nav{
+    background-color:rgb(52, 51, 52);
+    color:white;
+    font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  height:7vh;
+  padding:10px 10px;
+  text-align:center;
+  font-size:4vh;
+
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.outer
+{
+    display:flex;
+    background-color:rgb(243, 204, 243);
+    height:86vh;
+    align-items:center;
+    justify-content:center;
+   
+}
+.actual{
+    display:grid;
+    grid-template-columns:repeat(3,10vw);
+    grid-template-rows:repeat(3,10vw);
+}
+
+.ele
+{
+    border:black 2px solid;
+    align-items:center;
+    justify-content: center;
+    font-size:8vw;
+    text-align:center;
+}
+
+.actual div:hover{
+    background-color:rgb(200, 255, 0);
+}
+
+.info{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:100px;
+}
+
+.info h3
+{font-family: "Roboto", sans-serif;
+    font-weight:300px;
+    font-style: normal;
+    height:7vh;
+    padding:10px 10px;
+    text-align:center;
+    font-size:4vh;
+    color:black;
+    margin:3px;
+    position:absolute;
+    top:10rem;
+    
+}
+#reset{
+    background-color:rgb(224 224 224);
+    color:black;
+    border-radius:5px;
+    padding:0px 3px;
+    position:absolute;
+    top:13rem;
+}
+
+.gif
+{
+    display:none;
+}
+.change{
+    width:8rem;
+    height:8rem;
+    position:absolute;
+}
+
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+footer{
+    background-color:rgb(52, 51, 52);
+    color:white;
+    font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  height:9vh;
+  padding:10px 10px;
+  text-align:center;
+  font-size:4vh;
+}
+@media only screen  and (max-width:850px)
+{.outer
+    {
+    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.info h3
+{
+    font-weight:10px;
+    position:static;
+}
+
+#reset{
+    position:static;
+}
+.actual{
+    margin-bottom:30px;
+    position:absolute;
+    top:20vh;
+    
+}
+ .info{
+position:absolute;
+bottom:30vh;
+margin:0px;
+ }
+ }
+
